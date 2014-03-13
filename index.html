@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <title>Marit &amp; Stein Kåre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+    	font-family: Cinzel, Georgia, serif;
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+    
+    h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+		  font-family: 'Cinzel Decorative', Cinzel, Georgia, serif;
+		}
+		
+		.signatur{
+			font-family: 'Lovers Quarrel', 'Cinzel Decorative', Cinzel, Georgia, serif;
+			font-weight: normal !important;
+		}
+		
+		.signatur.brand{
+			font-size: 2.6em !important;
+			color: #fff;
+		}
+		
+		h1.signatur{
+			font-size: 5em !important;
+		}
+
+		.featurette-image{
+			max-height: 512px;
+			max-width: 512px;
+			box-shadow: -2px 4px 8px #BBBBBB;
+			margin: 5px;
+		}
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.6);
+      background-color: transparent;
+      border: 0;
+      z-index: 1000;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      min-width: 100%;
+      vertical-align: middle;	
+      margin: 40px auto 0 auto;
+      width: auto;
+   		/*max-height: 100%;*/
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    
+    .black-text h1, 
+    .black-text .lead{
+    	color: rgb(90, 90, 90);
+      text-shadow: none;
+    }
+    
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        /*height: 500px;*/
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        /*height: 300px;*/
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand signatur" href="#">Marit &amp; Stein Kåre</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Hjem</a></li>
+                <li><a href="map.html">Kart</a></li>
+                <li><a href="whishlist.html">Ønskeliste</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <!-- li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li-->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+      	<div class="item active">
+          <img src="img/photo3.jpg" alt="Stein Kåre">
+          <div class="container">
+            <div class="carousel-caption black-text">
+              <h1>Bryllyp</h1>
+              <p class="lead">Endelig skal de gifte seg.</p>
+              <a class="btn btn-large btn-primary" href="su.html">Svar på invitasjon</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/photo6.jpg" alt="Marit og Martine">
+          <div class="container">
+            <div class="carousel-caption black-text">
+              <h1 class="signatur">Marit</h1>
+              <p class="lead">Brud</p>
+              <a class="btn btn-large btn-primary" href="bride.html">Bruden forteller</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/SKFall.jpg" alt="Stein Kåre">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="signatur">Stein Kåre</h1>
+              <p class="lead">Brudgom</p>
+              <a class="btn btn-large btn-primary" href="groom.html">Brudgommens historie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <h2>Program</h2>
+          <p>En begivenhetsrik dag med mange detaljer.</p>
+          <p><a class="btn" href="#" onclick="$('html, body').animate({scrollTop: $('#program').offset().top}, 1000);">Vis Program &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <h2>Lokasjon</h2>
+          <p>Skåe og Pellestova i Øyer.</p>
+          <p><a class="btn" href="map.html">Vis Kart &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <h2>Ønskeliste</h2>
+          <p>Vi setter pris på egne ideer, men har også listet opp noen ting vi ønsker oss.</p>
+          <p><a class="btn" href="whishlist.html">Vis Ønskeliste &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+			<hr class="featurette-divider" id="program">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="http://pellestova.no/images/stories/headerimages/img_4968.jpg">
+        <h2 class="featurette-heading">Oppvarming. <span class="muted">Uformelt samvær.</span></h2>
+        <dl class="dl-horizontal">
+       		<dt>Hvor<dt><dd>Peisestua - Pellestova</dd>
+       		<dt>Når<dt><dd>Fra kl 19:00 26. Juli 2013</dd>
+       	</dl>
+        <p>
+        	Vi møtes i peisestua på Pellestova fra kl 19 for de som kommer opp fredag. Hvis været er bra tar vi kanskje fram grillen.
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="img/daap.jpg">
+        <h2 class="featurette-heading">Vielsen. <span class="muted">Får vi et ja?</span></h2>
+        <dl class="dl-horizontal">
+       		<dt>Hvor<dt><dd>Skåe i Øyer</dd>
+       		<dt>Når</dt><dd>13:30 27. Juli 2013</dd>
+       		<dt>Brud</dt><dd>Marit Synnøve Manengen</dd>
+       		<dt>Brudgom</dt><dd>Stein Kåre Skytteren</dd>
+       		<dt>Brudensforlover</dt>
+       		<dd>
+       			<ul class="unstyled">
+       				<li>Randi Mosenden</li>
+       				<li>Marit Aaserud</li>
+       			</ul>
+       		</dd>
+       		<dt>Brudgommensforlover</dt>
+       		<dd>
+       			<ul class="unstyled">
+       				<li>Erik Harg</li>
+       				<li>Arne Johan Husebø Hestnes</li>
+       			</ul>
+       		</dd>
+       		<dt>Prest</dt><dd>Øyvind Sagedal</dd>
+       	</dl>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="http://www.pellestova.no/images/stories/headerimages/pellestova_flyfoto.jpg">
+        <h2 class="featurette-heading">Middagen. <span class="muted">Et herremåltid.</span></h2>
+        <dl>
+       		<dt>Hvor<dt><dd>Pellestova – på toppen av Hafjell, direkte inn i høyfjellet - <a href="http://pellestova.no">Pellestova</a></dd>
+       		<dt>Når</dt><dd>Aperitiff serveres 16:30 27. Juli 2013</dd>
+       		<dt>Toastmaster</dt><dd>Kent Roger Bjørklund - Epost: <a href="mailto:k.r.bjorklund@gmail.com?subject=Marit og Stein Kåres Bryllup">k.r.bjorklund@gmail.com</a> / Tlf: 918 29 808</dd>
+       	</dl>
+      </div>
+      
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="http://www.pellestova.no/images/stories/headerimages/dsc_8320.jpg">
+        <h2 class="featurette-heading">Overnatting. <span class="muted">Pellestova.</span></h2>
+				        
+				<h3>Hotell</h3>
+				<ul class="unstyled">
+					<li>Enkeltrom med frokost Kr. 695,- pr natt</li>
+					<li>Dobbeltrom med frokost Kr. 1100,- pr natt</li>
+					<li>Fjellsuite med 2 soverom Kr. 1600,- pr natt</li>
+				</ul>
+				
+				<h3>Leilighet</h3>
+				<p>5-sengs leilighet med to soverom. Godt egnet for selvhushold.
+				Kr. 2750,- for fredag til søndag inkl sluttrengjøring, uten sengetøy og frokost.</p>
+				<p>Ta kontakt med Pellestova på telefon 61 27 45 00 eller epost <a href="mailto:post@pellestova.no?subject=Overnatting i forbindelse med Marit og Stein Kåres bryllup 27.juli">post@pellestova.no</a> for å reservere rom.</p>
+      </div>
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="img/Festen.jpg">
+        <h2 class="featurette-heading">Kaker. <span class="muted">Tilbake på Skåe.</span></h2>
+				
+				<dl class="dl-horizontal">
+       		<dt>Hvor<dt><dd>Skåe i Øyer</dd>
+       		<dt>Når</dt><dd>Fra 12:00 28. Juli 2013</dd>
+       	</dl>
+				<p >På søndag inviteres alle til Marit sitt barndomshjem på Skåe. Her serveres det kaker og kaffe. Så blir det fest tre dager til ende!</p>
+				
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Opp til toppen</a></p>
+        <p>&copy; 2013 Marit & Stein Kåre. &middot; <a href="privacy.html">Privatliv</a> &middot; <a href="terms.html">Betingelser</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Lovers Quarrel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lovers Quarrel'), local('LoversQuarrel-Regular'), url(http://themes.googleusercontent.com/static/fonts/loversquarrel/v1/gipdZ8b7pKb89MzQLAtJHLe9QQ7mEkGQBllIOuQBpm4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CinzelDecorative-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzeldecorative/v1/fmgK7oaJJIXAkhd9798yQoem3WQP60SwtMX1R01QT0U.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v1/PPYkMH2Vr9iqUFBaz60XpevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
